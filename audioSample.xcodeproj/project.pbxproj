@@ -14,6 +14,8 @@
 		DB41F6541CBCE6C000188193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB41F6521CBCE6C000188193 /* LaunchScreen.storyboard */; };
 		DB41F65F1CBCE6C000188193 /* audioSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41F65E1CBCE6C000188193 /* audioSampleTests.swift */; };
 		DB41F66A1CBCE6C000188193 /* audioSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41F6691CBCE6C000188193 /* audioSampleUITests.swift */; };
+		DB41F6781CBCE80300188193 /* mondo_01.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB41F6771CBCE80300188193 /* mondo_01.mp3 */; };
+		DB41F67A1CBCF4FE00188193 /* AnyAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB41F6791CBCF4FE00188193 /* AnyAudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DB41F6651CBCE6C000188193 /* audioSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB41F6691CBCE6C000188193 /* audioSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audioSampleUITests.swift; sourceTree = "<group>"; };
 		DB41F66B1CBCE6C000188193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB41F6771CBCE80300188193 /* mondo_01.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mondo_01.mp3; sourceTree = "<group>"; };
+		DB41F6791CBCF4FE00188193 /* AnyAudioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyAudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		DB41F6481CBCE6BF00188193 /* audioSample */ = {
 			isa = PBXGroup;
 			children = (
+				DB41F6771CBCE80300188193 /* mondo_01.mp3 */,
 				DB41F6491CBCE6BF00188193 /* AppDelegate.swift */,
 				DB41F64B1CBCE6BF00188193 /* ViewController.swift */,
 				DB41F64D1CBCE6C000188193 /* Main.storyboard */,
 				DB41F6501CBCE6C000188193 /* Assets.xcassets */,
 				DB41F6521CBCE6C000188193 /* LaunchScreen.storyboard */,
 				DB41F6551CBCE6C000188193 /* Info.plist */,
+				DB41F6791CBCF4FE00188193 /* AnyAudioPlayer.swift */,
 			);
 			path = audioSample;
 			sourceTree = "<group>";
@@ -193,6 +199,11 @@
 				TargetAttributes = {
 					DB41F6451CBCE6BF00188193 = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					DB41F6591CBCE6C000188193 = {
 						CreatedOnToolsVersion = 7.3;
@@ -232,6 +243,7 @@
 				DB41F6541CBCE6C000188193 /* LaunchScreen.storyboard in Resources */,
 				DB41F6511CBCE6C000188193 /* Assets.xcassets in Resources */,
 				DB41F64F1CBCE6C000188193 /* Main.storyboard in Resources */,
+				DB41F6781CBCE80300188193 /* mondo_01.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB41F67A1CBCF4FE00188193 /* AnyAudioPlayer.swift in Sources */,
 				DB41F64C1CBCE6C000188193 /* ViewController.swift in Sources */,
 				DB41F64A1CBCE6BF00188193 /* AppDelegate.swift in Sources */,
 			);
